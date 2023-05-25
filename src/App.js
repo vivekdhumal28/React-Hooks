@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import FocusInputUseRef from "./Components/FocusInputUseRef";
+import UseRefDeepII from "./Components/UseRefDeepII";
+// import Memoize from "./Components/Memoize";
+// import ParentComponentA from "./Components/ParentComponentA";
+// export const UserContext = createContext();
+// export const channelContext = createContext();
 function App() {
+  // const getName = (name) => {
+  //   console.log("Called from App.js Parent " + name);
+  // };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <UserContext.Provider value={"Vivek"}>
+        <channelContext.Provider value={"Dhumal"}>
+          <CompA />
+        </channelContext.Provider>
+      </UserContext.Provider> */}
+      {/* <ParentComponentA /> */}
+      {/* <Memoize /> */}
+      <FocusInputUseRef />
+      <UseRefDeepII />
     </div>
   );
 }
